@@ -1,0 +1,21 @@
+p {
+    color: aqua;
+    background: black;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+}
+h1{
+      text-shadow: 2px 2px 5px rgb(145, 199, 233);
+}
+h2{
+    text-shadow: 2px 2px 5px rgba(98, 6, 210, 0.241);
+
+}
+h3{
+    text-shadow: 2px 2px 5px rgb(64, 255, 0);
+
+}
+h4{
+    text-shadow: 2px 2px 5px burlywood;
+}
