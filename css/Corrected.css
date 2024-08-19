@@ -1,0 +1,86 @@
+body {
+    background-color: #fff;
+}
+
+h1 {
+    color: rgba(8, 141, 165, 1);
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 5%;
+    display: flex; /* Changed to flexbox for better layout */
+    flex-wrap: wrap;
+}
+
+.square { /* Renamed for clarity */
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+    background-image: url("../images/icons/smileyface2.png"); /* Moved here for efficiency */
+    color: #fff;
+    display: flex; /* To center the text */
+    justify-content: center;
+    align-items: center;
+}
+
+.square p {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Individual square styles */
+.square:nth-child(1) {
+    background-color: #4240ff; /* Changed to background-color for clarity */
+}
+.square:nth-child(2) {
+    background-color: #ab3fdd;
+}
+.square:nth-child(3) {
+    background-color: #ae163e;
+}
+.square:nth-child(4) {
+    background-color: #00b200;
+}
+
+/* Hover effects */
+.square:hover {
+    transform: scale(.5);
+    animation: race 2.5s infinite cubic-bezier(2.5, .2, .3, 2);
+}
+
+.square:nth-child(1):hover {
+    background-color: #13b4ff;
+}
+.square:nth-child(2):hover {
+    background-color: #d861af;
+}
+.square:nth-child(3):hover {
+    background-color: #81205f;
+}
+.square:nth-child(4):hover {
+    background-color: #77b800;
+}
+
+/* Animation */
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url("../images/icons/smileyface1.png");
+    }
+    50% {
+        transform: translateY(300px);
+    }
+}
